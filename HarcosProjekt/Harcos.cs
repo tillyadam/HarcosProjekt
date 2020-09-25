@@ -36,6 +36,7 @@ namespace HarcosProjekt
                 alapEletero = 8;
                 alapSebzes = 5;
             }
+            this.eletero = alapEletero;
 
         }
 
