@@ -18,6 +18,23 @@ namespace HarcosProjekt
         public Harcos(string nev, int statuszSablon)
         {
             this.nev = nev;
+            this.szint = 1;
+            this.tapasztalat = 0;
+
+            if (statuszSablon==1)
+            {
+                alapEletero = 15;
+                alapSebzes = 3;
+            }
+            else if (statuszSablon == 2)
+            {
+                alapEletero = 12;
+                alapSebzes = 4;
+            }else if (statuszSablon == 3)
+            {
+                alapEletero = 8;
+                alapSebzes = 5;
+            }
 
         }
 
