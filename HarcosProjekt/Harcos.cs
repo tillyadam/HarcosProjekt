@@ -18,7 +18,17 @@ namespace HarcosProjekt
         public string Nev { get => nev; set => nev = value; }
         public int Szint { get => szint; set => szint = value; }
         public int Tapasztalat { get => tapasztalat; set => tapasztalat = value; }
-        public int Eletero { get => eletero; set => eletero = value; }
+        public int Eletero
+        {
+            get => eletero;
+            set
+            {
+                if (value == 0)
+                {
+                    this.tapasztalat = 0;
+                }
+            }
+        }
         public int AlapEletero { get => alapEletero; }
         public int AlapSebzes { get => alapSebzes; }
         public int Sebzes { get => alapSebzes + szint; }
