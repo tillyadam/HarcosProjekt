@@ -24,7 +24,9 @@ namespace HarcosProjekt
             {
                 if (this.tapasztalat==SzintLepeshez)
                 {
+                    this.tapasztalat -= SzintLepeshez;
                     this.tapasztalat += 1;
+                    this.eletero = MaxEletero;
                 }
             }
         }
