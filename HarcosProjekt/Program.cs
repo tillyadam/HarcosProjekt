@@ -10,6 +10,10 @@ namespace HarcosProjekt
     {
         static void Main(string[] args)
         {
+            Harcos h = new Harcos("UwU", 2);
+
+            Console.WriteLine(h);
+            Console.ReadKey();
         }
     }
 }

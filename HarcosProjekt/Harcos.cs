@@ -21,7 +21,7 @@ namespace HarcosProjekt
             this.szint = 1;
             this.tapasztalat = 0;
 
-            if (statuszSablon==1)
+            if (statuszSablon == 1)
             {
                 alapEletero = 15;
                 alapSebzes = 3;
@@ -30,7 +30,8 @@ namespace HarcosProjekt
             {
                 alapEletero = 12;
                 alapSebzes = 4;
-            }else if (statuszSablon == 3)
+            }
+            else if (statuszSablon == 3)
             {
                 alapEletero = 8;
                 alapSebzes = 5;
@@ -51,16 +52,16 @@ namespace HarcosProjekt
 
         public void Megkuzd(Harcos masikHarcos)
         {
-            
+
         }
         public void Gyogyul()
         {
-            
+
         }
 
         public override string ToString()
         {
-            return base.ToString();
+            return string.Format("{0} - LVL: {1} - EXP: {2} - HP: {3} - DMG: {4}", nev, szint, tapasztalat / SzintLepeshez, eletero / MaxEletero, Sebzes); ;
         }
 
     }
