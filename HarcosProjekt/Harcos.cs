@@ -36,6 +36,10 @@ namespace HarcosProjekt
         {
             
         }
+        public void Gyogyul()
+        {
+            
+        }
 
     }
 }
