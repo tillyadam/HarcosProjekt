@@ -20,6 +20,11 @@ namespace HarcosProjekt
             harcosLista.Add(kihivo2);
             harcosLista.Add(kihivo3);
 
+            foreach (Harcos harcos in harcosLista)
+            {
+                Console.WriteLine(harcos);
+            }
+
             Console.WriteLine(h);
             Console.ReadKey();
         }
