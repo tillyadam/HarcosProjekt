@@ -53,6 +53,18 @@ namespace HarcosProjekt
 
         public void Megkuzd(Harcos masikHarcos)
         {
+            bool error = false;
+            if (this.nev == masikHarcos.nev)
+            {
+                Console.WriteLine("Ugyan az a harcos");
+                error = true;
+            }
+            if (this.eletero == 0 || masikHarcos.eletero == 0)
+            {
+                Console.WriteLine("0 eletero");
+                error = true;
+            }
+
 
         }
         public void Gyogyul()
