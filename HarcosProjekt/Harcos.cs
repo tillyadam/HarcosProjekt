@@ -41,5 +41,10 @@ namespace HarcosProjekt
             
         }
 
+        public override string ToString()
+        {
+            return base.ToString();
+        }
+
     }
 }
