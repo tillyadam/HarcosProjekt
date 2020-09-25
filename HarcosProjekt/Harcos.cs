@@ -27,6 +27,10 @@ namespace HarcosProjekt
                 {
                     this.tapasztalat = 0;
                 }
+                if (value>this.MaxEletero)
+                {
+                    value = MaxEletero;
+                }
             }
         }
         public int AlapEletero { get => alapEletero; }
