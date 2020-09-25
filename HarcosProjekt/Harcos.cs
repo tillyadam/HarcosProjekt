@@ -51,7 +51,7 @@ namespace HarcosProjekt
         }
 
 
-        
+
 
         public void Megkuzd(Harcos masikHarcos)
         {
@@ -67,13 +67,13 @@ namespace HarcosProjekt
                 error = true;
             }
 
-            
+
             do
             {
                 if (masikHarcos.eletero > 0)
                 {
                     this.eletero -= masikHarcos.Sebzes;
-                    if (this.eletero>0)
+                    if (this.eletero > 0)
                     {
                         this.tapasztalat += 5;
                     }
@@ -94,19 +94,26 @@ namespace HarcosProjekt
                         this.tapasztalat += 10;
                     }
                 }
-                
-            } while (masikHarcos.eletero>0 && this.eletero>0);            
+
+            } while (masikHarcos.eletero > 0 && this.eletero > 0);
 
 
         }
         public void Gyogyul()
         {
-
+            if (this.eletero == 0)
+            {
+                this.eletero = MaxEletero;
+            }
+            else
+            {
+                this.eletero += 3 + this.szint;
+            }
         }
 
         public override string ToString()
         {
-            return string.Format("{0} - LVL: {1} - EXP: {2} - HP: {3} - DMG: {4}", nev, szint, tapasztalat / SzintLepeshez, eletero / MaxEletero, Sebzes); ;
+            return string.Format("{0} - LVL: {1} - EXP: {2}/{3} - HP: {4}/{5} - DMG: {6}", nev, szint, tapasztalat, SzintLepeshez, eletero, MaxEletero, Sebzes);
         }
 
     }
