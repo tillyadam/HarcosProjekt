@@ -13,6 +13,12 @@ namespace HarcosProjekt
             Harcos h = new Harcos("UwU", 1);
 
             List<Harcos> harcosLista = new List<Harcos>();
+            Harcos kihivo1 = new Harcos("OwO",2);
+            Harcos kihivo2 = new Harcos("d_b",3);
+            Harcos kihivo3 = new Harcos(":p",1);
+            harcosLista.Add(kihivo1);
+            harcosLista.Add(kihivo2);
+            harcosLista.Add(kihivo3);
 
             Console.WriteLine(h);
             Console.ReadKey();
