@@ -40,6 +40,14 @@ namespace HarcosProjekt
 
             }
 
+            string mitSzeretne;
+            do
+            {
+                Console.WriteLine("Mit szeretne? \n a) Megkuzdeni egy harcossal \n b) Gyogyulni \n c) Kilepni");
+                mitSzeretne = Console.ReadLine();
+            } while (mitSzeretne != "a" && mitSzeretne != "b" && mitSzeretne != "c");
+            
+
 
             Console.ReadKey();
         }
